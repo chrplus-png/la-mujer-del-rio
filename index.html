@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -119,9 +120,22 @@
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-15px); }
-            60% { transform: translateY(-8px); }
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-15px);
+            }
+
+            60% {
+                transform: translateY(-8px);
+            }
         }
 
         /* Sección películas */
@@ -190,7 +204,8 @@
             margin-top: 15px;
         }
 
-        .trailer-btn, .pelicula-btn {
+        .trailer-btn,
+        .pelicula-btn {
             border: 2px solid #fff;
             background: transparent;
             color: white;
@@ -204,7 +219,8 @@
             text-decoration: none;
         }
 
-        .trailer-btn:hover, .pelicula-btn:hover {
+        .trailer-btn:hover,
+        .pelicula-btn:hover {
             background: #fff;
             color: #000;
             transform: scale(1.05);
@@ -358,22 +374,77 @@
         }
 
         @media (max-width: 768px) {
-            .menu { gap: 20px; padding: 15px; }
-            .menu a { font-size: 0.8rem; letter-spacing: 1px; }
-            .hero h1 { font-size: 2.2rem; letter-spacing: 6px; }
-            .hero .protagonizada { font-size: 1.1rem; }
-            .hero .sinopsis { font-size: 1rem; padding: 0 20px; }
-            .peliculas-grid { flex-direction: column; align-items: center; padding: 0 15px; }
-            .movie-card { width: 100%; max-width: 350px; }
-            .movie-card .afiche-container { height: auto; aspect-ratio: 2/3; }
-            .movie-card .afiche-container img { object-fit: cover; height: 100%; }
-            .botones-pelicula { flex-direction: column; align-items: center; gap: 8px; }
-            .trailer-btn, .pelicula-btn { width: 180px; justify-content: center; text-align: center; }
-            .contacto-buttons { flex-direction: column; align-items: center; }
-            .contacto-btn { width: 250px; justify-content: center; }
+            .menu {
+                gap: 20px;
+                padding: 15px;
+            }
+
+            .menu a {
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+                letter-spacing: 6px;
+            }
+
+            .hero .protagonizada {
+                font-size: 1.1rem;
+            }
+
+            .hero .sinopsis {
+                font-size: 1rem;
+                padding: 0 20px;
+            }
+
+            .peliculas-grid {
+                flex-direction: column;
+                align-items: center;
+                padding: 0 15px;
+            }
+
+            .movie-card {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .movie-card .afiche-container {
+                height: auto;
+                aspect-ratio: 2/3;
+            }
+
+            .movie-card .afiche-container img {
+                object-fit: cover;
+                height: 100%;
+            }
+
+            .botones-pelicula {
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .trailer-btn,
+            .pelicula-btn {
+                width: 180px;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .contacto-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contacto-btn {
+                width: 250px;
+                justify-content: center;
+            }
         }
     </style>
 </head>
+
 <body>
     <nav class="menu">
         <a href="#inicio">Inicio</a>
@@ -384,16 +455,21 @@
     <section class="hero" id="inicio">
         <h1>La Mujer del Río</h1>
         <p class="sinopsis">
-            Érica intenta reconstruir su vida junto a su hija tras un pasado marcado por la violencia. La salida de prisión de su ex pareja reabre heridas que parecían cerradas y la enfrenta nuevamente a un vínculo del que creía haber salido. Coproducción argentino-uruguaya entre Banda Aparte y Criatura Cine.
+            Érica intenta reconstruir su vida junto a su hija tras un pasado marcado por la violencia. La salida de
+            prisión de su ex pareja reabre heridas que parecían cerradas y la enfrenta nuevamente a un vínculo del que
+            creía haber salido. Coproducción argentino-uruguaya entre Banda Aparte y Criatura Cine.
         </p>
         <div class="afiche-hero">
             <img src="PELÍCULA 1 - LA MUJER DEL RÍO.jpeg" alt="La Mujer del Río">
         </div>
         <div class="botones-pelicula">
-            <button class="trailer-btn" onclick="playTrailer('PELÍCULA 1 - LA MUJER DEL RÍO_1.mp4')">Ver Trailer</button>
-            <a href="https://drive.google.com/file/d/1HRL5DstbxKmW9UMV2Sh4dlQYB6ZP3w2A/view" target="_blank" class="pelicula-btn">Ver Película</a>
+            <button class="trailer-btn" onclick="playTrailer('PELÍCULA 1 - LA MUJER DEL RÍO_1.mp4')">Ver
+                Trailer</button>
+            <a href="https://drive.google.com/file/d/1HRL5DstbxKmW9UMV2Sh4dlQYB6ZP3w2A/view" target="_blank"
+                class="pelicula-btn">Ver Película</a>
         </div>
-        <p class="protagonizada">Protagonizada por César Troncoso (El Eternauta, Netflix) - Andrea Carballo - Matilde Creimer Chiabrando.</p>
+        <p class="protagonizada">Protagonizada por César Troncoso (El Eternauta, Netflix) - Andrea Carballo - Matilde
+            Creimer Chiabrando.</p>
         <p class="direccion">Dirección: Néstor Mazzini.</p>
         <p class="produccion">Producción: Paulina Zoboli Casamayor.</p>
         <p class="coproductor">Coproductor: Martín Almada.</p>
@@ -406,40 +482,53 @@
         <div class="critica-pelicula">
             <h3>La mujer del río</h3>
             <div class="critica-item">
-                <p>"Un thriller arrollador, tenso y asfixiante, que construye un drama familiar de enorme intensidad."</p>
-                <a href="https://www.escribiendocine.com/noticias/2026/04/03/19492-critica-de-la-mujer-del-rio-nestor-mazzini-y-un-potente-cierre-de-trilogia-a-la-inversa" target="_blank">— EscribiendoCine</a>
+                <p>"Un thriller arrollador, tenso y asfixiante, que construye un drama familiar de enorme intensidad."
+                </p>
+                <a href="https://www.escribiendocine.com/noticias/2026/04/03/19492-critica-de-la-mujer-del-rio-nestor-mazzini-y-un-potente-cierre-de-trilogia-a-la-inversa"
+                    target="_blank">— EscribiendoCine</a>
             </div>
             <div class="critica-item">
                 <p>"Una película potente y brutal, que aborda sin concesiones la violencia de género."</p>
-                <a href="https://www.micropsiacine.com/2026/04/estrenos-critica-de-la-mujer-del-rio-de-nestor-mazzini/" target="_blank">— Micropsia</a>
+                <a href="https://www.micropsiacine.com/2026/04/estrenos-critica-de-la-mujer-del-rio-de-nestor-mazzini/"
+                    target="_blank">— Micropsia</a>
             </div>
             <div class="critica-item">
                 <p>"Incómoda, seca y urgente: una radiografía lúcida de la violencia cotidiana."</p>
-                <a href="https://caligari.com.ar/la-mujer-del-rio-2025-de-nestor-mazzini/" target="_blank">— Caligari</a>
+                <a href="https://caligari.com.ar/la-mujer-del-rio-2025-de-nestor-mazzini/" target="_blank">—
+                    Caligari</a>
             </div>
             <div class="critica-item">
                 <p>"Un relato doliente e incómodo, atravesado por una tensión constante."</p>
-                <a href="https://www.otroscines.com/nota-21267-critica-de-la-mujer-de-rio-pelicula-de-nestor-mazzini-c" target="_blank">— Otros Cines</a>
+                <a href="https://www.otroscines.com/nota-21267-critica-de-la-mujer-de-rio-pelicula-de-nestor-mazzini-c"
+                    target="_blank">— Otros Cines</a>
             </div>
             <div class="critica-item">
                 <p>"Un retrato tan silencioso como aturdidor sobre la violencia de género."</p>
-                <a href="https://www.ambito.com/espectaculos/la-mujer-del-rio-un-retrato-tan-silencioso-como-aturdidor-la-violencia-genero-n6264811" target="_blank">— Ámbito</a>
+                <a href="https://www.ambito.com/espectaculos/la-mujer-del-rio-un-retrato-tan-silencioso-como-aturdidor-la-violencia-genero-n6264811"
+                    target="_blank">— Ámbito</a>
             </div>
             <div class="critica-item">
                 <p>"Un thriller íntimo y emocional que retrata cómo se instala la violencia en una pareja."</p>
-                <a href="https://www.pagina12.com.ar/2026/04/10/nestor-mazzini-ojala-esta-pelicula-sirva-para-reflexionar/" target="_blank">— Página/12</a>
+                <a href="https://www.pagina12.com.ar/2026/04/10/nestor-mazzini-ojala-esta-pelicula-sirva-para-reflexionar/"
+                    target="_blank">— Página/12</a>
             </div>
             <div class="critica-item">
-                <p>"César Troncoso y Andrea Carballo fueron premiados en Argentina por su actuación en La mujer del río."</p>
-                <a href="https://www.montevideo.com.uy/Pantallazo/Cesar-Troncoso-fue-premiado-en-Argentina-por-su-actuacion-en-La-mujer-del-rio-uc920663" target="_blank">— Montevideo</a>
+                <p>"César Troncoso y Andrea Carballo fueron premiados en Argentina por su actuación en La mujer del
+                    río."</p>
+                <a href="https://www.montevideo.com.uy/Pantallazo/Cesar-Troncoso-fue-premiado-en-Argentina-por-su-actuacion-en-La-mujer-del-rio-uc920663"
+                    target="_blank">— Montevideo</a>
             </div>
             <div class="critica-item">
-                <p>"Una coproducción argentina uruguaya, La mujer del río se centra en los vínculos, en el (des)amor, en la violencia contenida y en lo no dicho en la pareja."</p>
-                <a href="https://mediospublicos.uy/la-mujer-del-rio-una-pelicula-de-nestor-mazzini/" target="_blank">— Medios Públicos</a>
+                <p>"Una coproducción argentina uruguaya, La mujer del río se centra en los vínculos, en el (des)amor, en
+                    la violencia contenida y en lo no dicho en la pareja."</p>
+                <a href="https://mediospublicos.uy/la-mujer-del-rio-una-pelicula-de-nestor-mazzini/" target="_blank">—
+                    Medios Públicos</a>
             </div>
             <div class="critica-item">
-                <p>"La película construye la violencia desde la acumulación de gestos y silencios más que desde el estallido."</p>
-                <a href="https://www.perfil.com/noticias/espectaculos/andrea-carballoincomodar-tambien-es-una-forma-de-decir-verdad.phtml" target="_blank">— Perfil</a>
+                <p>"La película construye la violencia desde la acumulación de gestos y silencios más que desde el
+                    estallido."</p>
+                <a href="https://www.perfil.com/noticias/espectaculos/andrea-carballoincomodar-tambien-es-una-forma-de-decir-verdad.phtml"
+                    target="_blank">— Perfil</a>
             </div>
         </div>
     </section>
@@ -447,7 +536,7 @@
     <section class="contacto-section" id="contacto">
         <h2>Contacto</h2>
         <div class="contacto-buttons">
-            <a href="mailto:paulinazoboli@gmail.com" class="contacto-btn email">✉️ Email</a>
+            <a href="mailto:mmuci@creationservices.us" class="contacto-btn email">✉️ Email</a>
             <a href="https://wa.me/541168901701" target="_blank" class="contacto-btn whatsapp">💬 WhatsApp</a>
             <a href="https://instagram.com/banda.aparte" target="_blank" class="contacto-btn instagram">
                 <img src="10900019.png" alt="Instagram" width="28" height="28" style="vertical-align: middle;">
@@ -461,7 +550,7 @@
     </section>
 
     <footer>
-        Trilogía Autoengaño — Banda Aparte
+        La mujer del río - Banda Aparte - Criatura cine
     </footer>
 
     <div class="modal" id="trailerModal">
@@ -485,13 +574,14 @@
             modal.classList.remove('active');
         }
 
-        modal.addEventListener('click', function(e) {
+        modal.addEventListener('click', function (e) {
             if (e.target === modal) closeModal();
         });
 
-        document.addEventListener('keydown', function(e) {
+        document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape') closeModal();
         });
     </script>
 </body>
+
 </html>
